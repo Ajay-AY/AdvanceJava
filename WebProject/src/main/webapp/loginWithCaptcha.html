@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+    .myform{
+        width: 350px;
+        margin: auto;
+
+    }
+    div{
+        margin-top: 10px;
+    }
+    input {
+ 		width: 100%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		box-sizing: border-box;
+  		border: 2px solid blue;
+  		border-radius: 4px;
+          font-size: large;
+	}
+    label {
+        font-weight: bold;
+        font-size: x-large;
+    }
+    button{
+        width: 150px;
+        padding: 10px;
+        
+        background-color:mediumblue;
+        color: white;
+    }
+    span{
+      color: red;
+    }
+
+</style>
+<body class="myform">
+<form action="loggMeIn" >
+<h1 >Login Form</h1>
+
+    <div>
+        <label for="username">Enter Username <span>*</span></label><br>
+    <input type="text" name="username" placeholder="Enter Email" required><br>
+  
+</div>
+<div>
+    <label for="password">Enter Password <span>*</span></label><br>
+    <input type="password" name="password" placeholder="Enter Password" required><br>
+</div>
+<div><img src = "captcha.jpg"> <br>
+ <input type="text" name="captcha" placeholder="Enter captcha">
+ <br><br></div>
+<div>
+ 
+    <button type="submit">Login</button>
+</div>
+</form>
+
+</body>
+</html>
